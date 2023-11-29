@@ -20,7 +20,7 @@ function App() {
     //but if you want such functinalty you can use it like this
     
     setCounter(prevCounter => prevCounter+1);
-    // prevCOunter here is the latest  updated state which you fetched again
+    // prevCOunter here is the latest updated state which you fetched again
   };
 
   const decreaseCounter = () => {
