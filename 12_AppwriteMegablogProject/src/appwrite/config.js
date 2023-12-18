@@ -88,3 +88,5 @@ export class DbSerives {
 }
 
 const dbServices = new DbSerives();
+
+export default dbServices; 

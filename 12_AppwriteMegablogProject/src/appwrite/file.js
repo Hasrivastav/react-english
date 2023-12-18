@@ -42,6 +42,12 @@ export class  FileStorageServices{
         return false;
       }
     }
+    async getFilePreview(fileId){
+        return this.bucket.getFilePreview( conf.appriteBucketId, fileId);
+    }
 
 
 }
+
+const fileService = new FileStorageServices();
+export default fileService; 

@@ -1,20 +1,20 @@
 
 
 function  customComponent(reactElement,mainContainer){
-    // const element = document.createElement(reactElement.type);
-    // element.innerHTML = reactElement.children
-    // element.setAttribute('href',reactElement.props.href)
-    // element.setAttribute('target',reactElement.props.target)
-    // mainContainer.appendChild(element)
+    const element = document.createElement(reactElement.type);
+    element.innerHTML = reactElement.children
+    element.setAttribute('href',reactElement.props.href)
+    element.setAttribute('target',reactElement.props.target)
+    mainContainer.appendChild(element)
 
-    const docElement = document.createElement(reactElement.type)
-    docElement.innerHTML = reactElement.children;
-    for (const prop in reactElement.props) {
-        if(prop === 'children') continue;
-        docElement.setAttribute(prop,reactElement.props[prop])
+    // const docElement = document.createElement(reactElement.type)
+    // docElement.innerHTML = reactElement.children;
+    // for (const prop in reactElement.props) {
+    //     if(prop === 'children') continue;
+    //     docElement.setAttribute(prop,reactElement.props[prop])
       
-    }
-    mainContainer.appendChild(docElement)
+    // }
+    // mainContainer.appendChild(docElement)
 
 
 }
